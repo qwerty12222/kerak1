@@ -1,0 +1,43 @@
+[build]
+  functions = "netlify/functions"
+  command = "npm run build"
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/webhook"
+  to = "/.netlify/functions/webhook"
+  status = 200
+
+[[redirects]]
+  from = "/health"
+  to = "/.netlify/functions/health"
+  status = 200
+
+[[redirects]]
+  from = "/set_webhook"
+  to = "/.netlify/functions/set_webhook"
+  status = 200
+
+[[redirects]]
+  from = "/delete_webhook"
+  to = "/.netlify/functions/delete_webhook"
+  status = 200
+
+[[redirects]]
+  from = "/bot_info"
+  to = "/.netlify/functions/bot_info"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+[[headers]]
+  for = "/.netlify/functions/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
