@@ -9,9 +9,9 @@ const app = express();
 app.use(express.json());
 
 // Bot konfiguratsiyasi
-const BOT_TOKEN = process.env.BOT_TOKEN || '7560239477:AAEZ6sglLC_Q1uIBUJ7CZGSRCGgIr6-ny5s';
+const BOT_TOKEN = process.env.BOT_TOKEN || '7576302790:AAEUCdbR2UwZV4w7Rld_BicQKhQRpkHGiQw';
 const ADMIN_ID = parseInt(process.env.ADMIN_ID) || 6460744486;
-const BOT_USERNAME = process.env.BOT_USERNAME || 'Testonliine_bot';
+const BOT_USERNAME = process.env.BOT_USERNAME || 'test270bot';
 const WEBHOOK_URL = process.env.WEBHOOK_URL;
 
 // Database fayli yo'li
@@ -469,13 +469,13 @@ Sizni <b>Professional Test Bot</b>ida ko'rishdan juda xursandmiz! 🤖✨
 • Batafsil hisobotlar
 • Natijalarni ulashish
 
-❓ <b>Yordam kerakmi?</b> @admin bilan bog'laning`,
+❓ <b>Yordam kerakmi?</b> @td3300 bilan bog'laning`,
 
     about: `ℹ️ <b>Professional Test Bot haqida</b>
 
 🤖 <b>Versiya:</b> 2.0 Pro
-🚀 <b>Ishga tushirilgan:</b> 2024-yil
-👨‍💻 <b>Ishlab chiqaruvchi:</b> @YourUsername
+🚀 <b>Ishga tushirilgan:</b> 2025-yil
+👨‍💻 <b>Ishlab chiqaruvchi:</b> @td3300
 
 🌟 <b>Bot imkoniyatlari:</b>
 ✅ Cheksiz test yaratish
@@ -495,7 +495,7 @@ Sizni <b>Professional Test Bot</b>ida ko'rishdan juda xursandmiz! 🤖✨
 Barcha ma'lumotlaringiz xavfsiz saqlanadi va uchinchi shaxslar bilan bo'lishilmaydi.
 
 🤝 <b>Qo'llab-quvvatlash:</b>
-24/7 texnik yordam: @support_bot
+24/7 texnik yordam: @td3300
 
 💝 Botdan foydalanganingiz uchun rahmat!`
 };
