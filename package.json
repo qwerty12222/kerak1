@@ -1,57 +1,32 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/webhook.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/health.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/set_webhook.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/delete_webhook.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/bot_info.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/webhook",
-      "dest": "/api/webhook.js"
-    },
-    {
-      "src": "/api/health",
-      "dest": "/api/health.js"
-    },
-    {
-      "src": "/api/set_webhook",
-      "dest": "/api/set_webhook.js"
-    },
-    {
-      "src": "/api/delete_webhook", 
-      "dest": "/api/delete_webhook.js"
-    },
-    {
-      "src": "/api/bot_info",
-      "dest": "/api/bot_info.js"
-    }
-  ],
-  "functions": {
-    "api/webhook.js": {
-      "maxDuration": 30
-    }
+  "name": "professional-test-bot",
+  "version": "2.0.0",
+  "description": "Professional Telegram Test Bot with comprehensive features",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel --prod"
   },
-  "env": {
-    "BOT_TOKEN": "7576302790:AAEUCdbR2UwZV4w7Rld_BicQKhQRpkHGiQw",
-    "ADMIN_ID": "6460744486",
-    "BOT_USERNAME": "test270bot"
+  "keywords": [
+    "telegram",
+    "bot",
+    "test",
+    "quiz",
+    "education",
+    "nodejs",
+    "vercel"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
