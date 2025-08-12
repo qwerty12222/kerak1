@@ -1,9 +1,32 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/webhook.js", "use": "@vercel/node" }
+  "name": "professional-test-bot",
+  "version": "2.0.0",
+  "description": "Professional Telegram Test Bot with comprehensive features",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "test",
+    "quiz",
+    "education",
+    "nodejs",
+    "vercel"
   ],
-  "routes": [
-    { "src": "/webhook", "dest": "/api/webhook.js" }
-  ]
+  "author": "xojalik",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
