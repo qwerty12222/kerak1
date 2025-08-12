@@ -17,7 +17,7 @@
     "quiz",
     "netlify"
   ],
-  "author": "Your Name",
+  "author": "xojanazar",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
