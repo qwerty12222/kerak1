@@ -36,7 +36,7 @@
       "dest": "/api/set_webhook.js"
     },
     {
-      "src": "/api/delete_webhook", 
+      "src": "/api/delete_webhook",
       "dest": "/api/delete_webhook.js"
     },
     {
@@ -44,11 +44,6 @@
       "dest": "/api/bot_info.js"
     }
   ],
-  "functions": {
-    "api/webhook.js": {
-      "maxDuration": 30
-    }
-  },
   "env": {
     "BOT_TOKEN": "7576302790:AAEUCdbR2UwZV4w7Rld_BicQKhQRpkHGiQw",
     "ADMIN_ID": "6460744486",
